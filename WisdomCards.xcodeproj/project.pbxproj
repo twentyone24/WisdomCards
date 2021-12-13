@@ -29,6 +29,14 @@
 		677054E2276509A200F01713 /* WisdomCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677054E1276509A200F01713 /* WisdomCardsTests.swift */; };
 		677054EC276509A200F01713 /* WisdomCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677054EB276509A200F01713 /* WisdomCardsUITests.swift */; };
 		677054EE276509A200F01713 /* WisdomCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677054ED276509A200F01713 /* WisdomCardsUITestsLaunchTests.swift */; };
+		67760B7C27676B590006E6EF /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B7B27676B590006E6EF /* WaitingScreen.swift */; };
+		67760B7E27676BD80006E6EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B7D27676BD80006E6EF /* Date.swift */; };
+		67760B8127676C0B0006E6EF /* FlipClockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8027676C0B0006E6EF /* FlipClockVM.swift */; };
+		67760B8427676C5D0006E6EF /* FlipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8327676C5D0006E6EF /* FlipCell.swift */; };
+		67760B8627676C960006E6EF /* FlipContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8527676C960006E6EF /* FlipContainer.swift */; };
+		67760B8827676CAE0006E6EF /* FlipClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8727676CAE0006E6EF /* FlipClockView.swift */; };
+		67760B8B27677EC00006E6EF /* User Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8A27677EC00006E6EF /* User Repository.swift */; };
+		67760B8D27677F070006E6EF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67760B8C27677F070006E6EF /* UserModel.swift */; };
 		677BE9CC2766FA3F0031F837 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9CB2766FA3F0031F837 /* AuthView.swift */; };
 		677BE9CF276701270031F837 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 677BE9CE276701270031F837 /* OneSignal */; };
 		6785710027670EE400C8AFD6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 678570FF27670EE400C8AFD6 /* FirebaseAnalytics */; };
@@ -96,6 +104,14 @@
 		677054E7276509A200F01713 /* WisdomCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		677054EB276509A200F01713 /* WisdomCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomCardsUITests.swift; sourceTree = "<group>"; };
 		677054ED276509A200F01713 /* WisdomCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67760B7B27676B590006E6EF /* WaitingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingScreen.swift; sourceTree = "<group>"; };
+		67760B7D27676BD80006E6EF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		67760B8027676C0B0006E6EF /* FlipClockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockVM.swift; sourceTree = "<group>"; };
+		67760B8327676C5D0006E6EF /* FlipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCell.swift; sourceTree = "<group>"; };
+		67760B8527676C960006E6EF /* FlipContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipContainer.swift; sourceTree = "<group>"; };
+		67760B8727676CAE0006E6EF /* FlipClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockView.swift; sourceTree = "<group>"; };
+		67760B8A27677EC00006E6EF /* User Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Repository.swift"; sourceTree = "<group>"; };
+		67760B8C27677F070006E6EF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		677BE9CB2766FA3F0031F837 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		678571172767180500C8AFD6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		6785711927671D3700C8AFD6 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
@@ -150,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				675220F1276741EF007154ED /* HomeView.swift */,
+				67760B7B27676B590006E6EF /* WaitingScreen.swift */,
 			);
 			path = "Home Screens";
 			sourceTree = "<group>";
@@ -186,6 +203,7 @@
 			children = (
 				675220FA27674D51007154ED /* String.swift */,
 				675221082767525D007154ED /* Double.swift */,
+				67760B7D27676BD80006E6EF /* Date.swift */,
 				6752210A27675279007154ED /* Bounds.swift */,
 				6752210C276752A6007154ED /* UserDefaults.swift */,
 			);
@@ -196,10 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				675220FE27675154007154ED /* View.swift */,
+				67522106276751FA007154ED /* Colors.swift */,
 				67522102276751C2007154ED /* FileManager.swift */,
 				67522104276751E9007154ED /* System.swift */,
 				6752210027675180007154ED /* Font.swift */,
-				67522106276751FA007154ED /* Colors.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -280,6 +298,32 @@
 			path = WisdomCardsUITests;
 			sourceTree = "<group>";
 		};
+		67760B7F27676BFB0006E6EF /* Home Screen VM */ = {
+			isa = PBXGroup;
+			children = (
+				67760B8027676C0B0006E6EF /* FlipClockVM.swift */,
+			);
+			path = "Home Screen VM";
+			sourceTree = "<group>";
+		};
+		67760B8227676C4D0006E6EF /* FlipClock */ = {
+			isa = PBXGroup;
+			children = (
+				67760B8327676C5D0006E6EF /* FlipCell.swift */,
+				67760B8527676C960006E6EF /* FlipContainer.swift */,
+				67760B8727676CAE0006E6EF /* FlipClockView.swift */,
+			);
+			name = FlipClock;
+			sourceTree = "<group>";
+		};
+		67760B8927677D4B0006E6EF /* Firestore Providers */ = {
+			isa = PBXGroup;
+			children = (
+				67760B8A27677EC00006E6EF /* User Repository.swift */,
+			);
+			path = "Firestore Providers";
+			sourceTree = "<group>";
+		};
 		677BE9C22766F90C0031F837 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +339,7 @@
 			children = (
 				678571172767180500C8AFD6 /* AuthViewModel.swift */,
 				6785711927671D3700C8AFD6 /* RootViewModel.swift */,
+				67760B7F27676BFB0006E6EF /* Home Screen VM */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -302,6 +347,7 @@
 		677BE9C42766F91C0031F837 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				67760B8C27677F070006E6EF /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -310,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				675220F727674C4F007154ED /* Auth Providers */,
+				67760B8927677D4B0006E6EF /* Firestore Providers */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -333,6 +380,7 @@
 		677BE9C82766F9530031F837 /* Shared Components */ = {
 			isa = PBXGroup;
 			children = (
+				67760B8227676C4D0006E6EF /* FlipClock */,
 			);
 			path = "Shared Components";
 			sourceTree = "<group>";
@@ -509,12 +557,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				67522103276751C2007154ED /* FileManager.swift in Sources */,
+				67760B7C27676B590006E6EF /* WaitingScreen.swift in Sources */,
+				67760B8127676C0B0006E6EF /* FlipClockVM.swift in Sources */,
 				67ED030E276726C600EB554D /* GoogleAuthenticator.swift in Sources */,
 				677054D8276509A100F01713 /* WisdomCards.xcdatamodeld in Sources */,
 				675220FF27675154007154ED /* View.swift in Sources */,
 				677054D5276509A100F01713 /* Persistence.swift in Sources */,
+				67760B8B27677EC00006E6EF /* User Repository.swift in Sources */,
+				67760B7E27676BD80006E6EF /* Date.swift in Sources */,
+				67760B8627676C960006E6EF /* FlipContainer.swift in Sources */,
+				67760B8427676C5D0006E6EF /* FlipCell.swift in Sources */,
 				677BE9CC2766FA3F0031F837 /* AuthView.swift in Sources */,
 				675220FB27674D51007154ED /* String.swift in Sources */,
+				67760B8D27677F070006E6EF /* UserModel.swift in Sources */,
 				675220F927674C6C007154ED /* AppleAuthenticator.swift in Sources */,
 				6785711C27671E7B00C8AFD6 /* AuthServiceProvider.swift in Sources */,
 				678571182767180500C8AFD6 /* AuthViewModel.swift in Sources */,
@@ -526,6 +581,7 @@
 				6752210127675180007154ED /* Font.swift in Sources */,
 				6752210B27675279007154ED /* Bounds.swift in Sources */,
 				675220F2276741EF007154ED /* HomeView.swift in Sources */,
+				67760B8827676CAE0006E6EF /* FlipClockView.swift in Sources */,
 				6785711A27671D3700C8AFD6 /* RootViewModel.swift in Sources */,
 				6752211027675303007154ED /* Container Keys.swift in Sources */,
 				67522105276751E9007154ED /* System.swift in Sources */,

@@ -15,7 +15,7 @@ import Firebase
 
 final class AuthenticationViewModel: ObservableObject {
     
-    @Published var state: State
+    @Published var state: AuthState
     private var authenticator: GoogleSignInAuthenticator {
         return GoogleSignInAuthenticator(authViewModel: self)
     }
@@ -29,17 +29,17 @@ final class AuthenticationViewModel: ObservableObject {
         }
     }
     
-    /// Signs the user in.
+    
     func signIn() {
         authenticator.signIn()
     }
     
-    /// Signs the user out.
+    
     func signOut() {
         authenticator.signOut()
     }
     
-    /// Disconnects the previously granted scope and logs the user out.
+    
     func disconnect() {
         authenticator.disconnect()
     }
@@ -50,9 +50,8 @@ final class AuthenticationViewModel: ObservableObject {
 }
 
 extension AuthenticationViewModel {
-    /// An enumeration representing logged in status.
-    ///
-    enum State {
+    
+    enum AuthState {
         case signedIn(User)
         case signedOut
     }

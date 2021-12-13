@@ -33,7 +33,8 @@ final class GoogleSignInAuthenticator: ObservableObject {
     /// Signs in the user based upon the selected account.'
     /// - note: Successful calls to this will set the `authViewModel`'s `state` property.
     func signIn() {
-        guard let rootViewController = UIApplication.shared.windows.first?.rootViewController else {
+        print(">>>! [DEBUG] \(#function)")
+        guard let rootViewController = UIApplication.shared.rootViewController else {
             print(">>> There is no root view controller!")
             return
         }
@@ -41,8 +42,9 @@ final class GoogleSignInAuthenticator: ObservableObject {
         GIDSignIn.sharedInstance.signIn(
             with: configuration,
             presenting: rootViewController
-        ) { [weak self] user, error in
+        ) { user, error in
             
+            print(">>>! [DEBUG] GIDSignIn \(#function)")
             guard let user = user else {
                 print(">>> Error! \(String(describing: error))")
                 return
@@ -53,7 +55,7 @@ final class GoogleSignInAuthenticator: ObservableObject {
                 withIDToken: user.authentication.idToken ?? "",
                 accessToken: user.authentication.accessToken)
             
-            self?.proceedThroughFirebase(credential: credential)
+            self.proceedThroughFirebase(credential: credential)
         }
     }
     
@@ -76,19 +78,20 @@ final class GoogleSignInAuthenticator: ObservableObject {
     }
     
     func checkAuthStatus() {
-        GIDSignIn.sharedInstance.restorePreviousSignIn { [unowned self] user, error in
+        GIDSignIn.sharedInstance.restorePreviousSignIn { [weak self] user, error in
+            print(">>>! [DEBUG] \(#function)")
             if let user = user {
                 
                 let credential = GoogleAuthProvider.credential(
                     withIDToken: user.authentication.idToken ?? "",
                     accessToken: user.authentication.accessToken)
-                self.proceedThroughFirebase(credential: credential)
+                self?.proceedThroughFirebase(credential: credential)
                 
             } else if let error = error {
-                self.authViewModel.state = .signedOut
+                self?.authViewModel.state = .signedOut
                 print("There was an error restoring the previous sign-in: \(error)")
             } else {
-                self.authViewModel.state = .signedOut
+                self?.authViewModel.state = .signedOut
             }
         }
     }
@@ -100,6 +103,7 @@ extension GoogleSignInAuthenticator: AuthenticationService {
     
     func proceedThroughFirebase(credential: AuthCredential) {
         Auth.auth().signIn(with: credential) { (authResult, error) in
+            print(">>>! [DEBUG] \(#function)")
             if let error = error {
                 // self.showAlert(message: error.localizedDescription)
                 print(">>> Error! \(String(describing: error))")
@@ -117,6 +121,7 @@ extension GoogleSignInAuthenticator: AuthenticationService {
     }
     
     func setUserAndProceedLogin(user: User) -> Void {
+        print(">>>! [DEBUG] \(#function)")
         self.authViewModel.state = .signedIn(user)
     }
 }

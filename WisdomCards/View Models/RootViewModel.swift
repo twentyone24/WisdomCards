@@ -10,20 +10,18 @@ import Combine
 import SwiftUI
 
 enum ActiveScreen {
-    case none
-    case login
+    case idle
     case timer
     case card
-    
 }
 
 class RootViewModel: ObservableObject {
     
     private var email: String = ""
     
-    @Published private(set) var currentScreen: ActiveScreen = .none {
+    @Published private(set) var currentScreen: ActiveScreen = .idle {
         didSet {
-            print("Active Screen: \(currentScreen)")
+            print(">>! Active Screen: \(currentScreen)")
         }
     }
     
