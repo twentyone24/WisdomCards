@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>59954DCF-7FA1-4E0D-A660-35C5C8734513</UUID>
+        <nextObjectID>101</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>1138</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>XDDevAttributeMapping</key>
+                        <data>
+		0plcXXRN7XHKl5CcF+fwriFmUpON3ZtcI/AfK748aWc=
+		</data>
+                        <key>XDDevEntityMapping</key>
+                        <data>
+		qeN1Ym3TkWN1G6dU9RfX6Kd2ccEvcDVWHpd3LpLgboI=
+		</data>
+                        <key>XDDevMappingModel</key>
+                        <data>
+		EqtMzvRnVZWkXwBHu4VeVGy8UyoOe+bi67KC79kphlQ=
+		</data>
+                        <key>XDDevPropertyMapping</key>
+                        <data>
+		XN33V44TTGY4JETlMoOB5yyTKxB+u4slvDIinv0rtGA=
+		</data>
+                        <key>XDDevRelationshipMapping</key>
+                        <data>
+		akYY9LhehVA/mCb4ATLWuI9XGLcjpm14wWL1oEBtIcs=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesDigest</key>
+                    <string>+Hmc2uYZK6og+Pvx5GUJ7oW75UG4V/ksQanTjfTKUnxyGWJRMtB5tIRgVwGsrd7lz/QR57++wbvWsr6nxwyS0A==</string>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+</database>
