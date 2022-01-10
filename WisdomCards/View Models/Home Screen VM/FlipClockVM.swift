@@ -36,18 +36,18 @@ class ClockViewModel {
         Timer
             .publish(every: 1, tolerance: 1, on: .main, in: .default)
             .autoconnect()
-            .ma
+            // .map { }
     }
     
     private func publishTimer() {
-        timer = Timer.publish(every: 1, on: .main, in: .default) { _ in
-            self.duration -= 1
-            // let seconds = Int(self.duration) % 60
-            
-            if self.duration <= 0 {
-                self.haultTimer()
-            }
-        }
+//        timer = Timer.publish(every: 1, on: .main, in: .default) { _ in
+//            self.duration -= 1
+//            // let seconds = Int(self.duration) % 60
+//
+//            if self.duration <= 0 {
+//                self.haultTimer()
+//            }
+//        }
     }
     
     func haultTimer() {
